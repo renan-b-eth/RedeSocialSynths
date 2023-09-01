@@ -1,0 +1,102 @@
+#container{
+	height: 500px;
+}
+#titulo{
+	margin: auto;
+	color: dodgerblue;
+	font-family: 'Corbel';
+	font-size: 30px;
+}
+ #photoProfile{
+        max-width: 210px;
+        max-height: 210px;
+        /*background: dodgerblue;*/
+        border-radius: 100%;
+        margin: auto;
+        position: relative;
+        top: 5px;
+    }
+ .deletarConta{
+ 	width: 90px;
+ 	height: 40px;
+ 	background: red;
+ 	color: white;
+ 	border-radius: 5px;
+ 	margin: auto;
+ 	position: relative;
+ 	left: 142.5px;
+ 	top:8px;
+ }
+ .deletarConta:hover{
+ 	cursor: pointer;
+ }
+ #insurerRight{
+        width:  620px;
+        /*background: black;*/
+        float: left;
+        margin-top: 30px;
+   }
+.inputName{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.9);
+    transition: 2s;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 7px;
+}
+
+.inputLastName{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.9);
+    transition: 2s;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 7px;
+    position: relative;
+    left: 163px;
+    top: -45px;
+}
+
+.inputPassword{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.9);
+    transition: 2s;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 7px;
+    position: relative;
+    top: -10px;
+}
+
+.inputPasswordAgain{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.9);
+    transition: 2s;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 7px;
+    position: relative;
+    top: -10px;
+}
+.alterar{
+	width: 60px;
+	height: 30px;
+	background: dodgerblue;
+	border-radius: 3px;
+	color: white;
+	position: relative;
+	margin: auto;
+	left: 120px;
+}
+.alterar:hover{
+	cursor: pointer;
+}
+

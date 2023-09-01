@@ -1,0 +1,353 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/06/2017, 22:19:45
+    Author     : Renan-PC
+    */
+    #container{
+        width: 1000px;
+        background:#f1f1f1;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 70px;
+        height: 1000px;
+    }
+    .barleft2{
+        width: 350px;
+        height: 2000px;
+        /*background: dodgerblue;*/
+        float: left;
+    }
+    .insurerInfo2{
+        width: 332px;
+        /*background: #737373;*/
+    }
+    .aboutMe{
+        width: 330px;
+        margin-bottom: 10px;
+        background: #fefefe;
+    }
+    .imageAboutMe{
+        width: 50px;
+        height: 50px;
+        /*background: blueviolet;*/
+        background: url('../../imagens/icones/IconesMeuPerfil/minhasInformacoes.png');
+        margin-left: 10px;
+    }
+    .titleAboutMe{
+        width: 250px;
+        height: 50px;
+        margin-left: 70px;
+        margin-top: -50px;
+        /* background: crimson;*/
+        color: #939393;
+        line-height: 50px;
+        font-family: 'ARIAL';
+        font-size: 22px;
+
+    }
+    .positionHr{
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .myInfos{
+        text-align: center;
+        font-style: italic;
+        font-family: 'ARIAL';
+        color: #6e6e6e;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .myInfos2{
+        text-align: center;
+        font-family: 'ARIAL';
+        color: #979595;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .viewMore{
+        color: #757575;
+        font-family: 'ARIAL';
+        text-align: right;
+        font-size: 12px;
+    }
+    .myPhotos{
+        width: 331px;
+        background: #fefefe;
+    }
+    .imageAboutMe2{
+        width: 50px;
+        height: 50px;
+        /*background: blueviolet;*/
+        background: url('../../imagens/icones/IconesMeuPerfil/fotosIcone.png');
+        margin-left: 10px;
+    }
+    .Pictures{
+        background: black;
+        width: 100px;
+        height: 100px;
+        margin: 5.1px;
+        float: left;
+    }
+    .posicaoPostagemPerfil{
+        position: relative;
+        left: 35px;
+    }
+    .PFA{
+        width: 650px;
+        height: 1500px;
+        /*background: orange;*/
+        margin-left: 350px;
+    }
+    .PFA2{
+        width: 580px;
+        margin-left: 70px;
+        height: 30px;
+        /*background: cyan;*/
+        position: relative;
+        bottom: 30px;
+    }
+    .DPFA{
+        float: left;
+        margin-right: 10px;
+        font-family: 'ARIAL';
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+
+    #borderPhotoProfile{
+        width: 220px;
+        height: 220px;
+        background: white;
+        border-radius: 100%;
+        margin-left: 77.5px;
+        -webkit-box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.55);
+        -moz-box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.55);
+        box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.55);
+    }
+    #photoProfile{
+        max-width: 210px;
+        max-height: 210px;
+        /*background: dodgerblue;*/
+        border-radius: 100%;
+        margin: auto;
+        position: relative;
+        top: 5px;
+    }
+    #insurerLeft{
+        width: 380px;
+        /*background: black;*/
+        float: left;
+    }
+    #insurerRight{
+        width:  620px;
+        /*background: black;*/
+        float: left;
+    }
+    #insurerDados{
+        width: 380px;
+        /*background: dodgerblue;*/
+    }
+
+    #nameProfile{
+        width: 225px;
+        height: 30px;
+        margin-left: 67.5px;
+        /*background: black;*/
+        padding: 10px;
+        font-weight: 33px;
+        font-family: 'Corbel';
+        font-size: 30px;
+        color: black;
+    }
+    #nicknameProfile{
+        width: 225px;
+        margin-left: 67.5px;
+        /*background: dodgerblue;*/
+        padding-left: 10px;
+        font-family: 'Corbel';
+        font-size: 16px;
+        color: #151515;
+        font-style: italic;
+    }
+
+    #fraseProfile{
+        width: 225px;
+        /* background: yellow;*/
+        font-family: 'Corbel';
+        font-size: 14px;
+        color: #a0a0a0;
+        margin-left: 77.5px;
+        margin-top: 5px;
+    }
+    .editProfile{
+        width: 20px;
+        height: 20px;
+        /*background: dodgerblue;*/
+        font-family: 'Corbel';
+        font-size: 14px;
+        color: #a0a0a0;
+        margin-left: 100px;
+        margin-top: 7px;
+        position: relative;
+        top: -40px;
+        right: 80px;
+    }
+    .editProfile:hover{
+        cursor: pointer;
+    }
+    #insurerAboutMe{
+        width: 380px;
+        /*background: orange;*/
+        margin-top: 15px;
+    }
+    #aboutMe{
+        width: 160px;
+        height: 30px;
+        padding-left: 8px;
+        font-family: 'Corbel';
+        font-size: 18px;
+        color: black;
+        /*background: black;*/
+    }
+    #textAboutMe{
+        width: 340px;
+        background: white;
+        margin: auto;
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+        font-family: 'Corbel';
+        font-size: 15px;
+        color: black;
+        border-radius: 3px;
+        -webkit-box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.55);
+        -moz-box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.55);
+        box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.55);
+    }
+    #insurerPhotosProfile{
+        width: 360px;
+        /*background: black;*/
+        margin-top: 15px;
+        position: relative;
+        float: right;
+        border-radius: 3px;
+        margin-right: 10px;
+    }
+    #titlePhotos{
+        width: 90px;
+        height: 30px;
+        font-family: 'Corbel';
+        font-size: 18px;
+        color: black;
+        /*background: black;*/
+
+    }
+    #insurerPhotos{
+        width: 360px;
+        float: left;
+        background: white;
+        margin-top: 10px;
+        border-radius: 3px;
+        min-height: 50px;
+        line-height: 50px;
+        font-family: 'corbel';
+        color: #9a9a9a;
+        padding-bottom: 8px;
+        font-style: italic;
+        text-align: center;
+        -webkit-box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.55);
+        -moz-box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.55);
+        box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.55);
+    }
+    .photosProfile{
+        width: 109px;
+        height: 109px;
+        background: black;
+        margin-left: 8px;
+        margin-top: 8px;
+        margin-bottom:1px;
+        float: left;
+        border-radius: 1px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .separador{
+        background: white;
+        width: 360px;
+        height: 1px;
+        margin: auto;
+    }
+    .fixar{
+        position: fixed;
+    }
+    #add {
+        width: 27px;
+        height: 27px;
+        position: relative;
+        margin-left: 200px;
+        background-image: url('imagens/icones/OutrosIcones/add.png');
+        cursor: pointer;
+    }
+    
+    #add:hover{
+        background-image: url("imagens/icones/OutrosIcones/x.png");
+    }
+
+#botaoEditarDesc {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -20px;
+    top:10;
+}
+#editDesc {
+    width: 90%;
+    background-color: #e8e8e8;
+}
+#editSub {
+    width: 90%;
+    background-color: #e8e8e8;
+}
+#descEscrita {/*CRIEI ESSA DIV SÓ PRA MIM FAZER A DESCRICAO DESAPARECER */
+    display: block;
+}
+#formdesc {/*CRIEI ESSA DIV SÓ PRA MIM FAZER O FORM APARECER */
+    display: none;
+}
+
+#subEscrita {/*CRIEI ESSA DIV SÓ PRA MIM FAZER A DESCRICAO DESAPARECER */
+    display: block;
+}
+#formSub {/*CRIEI ESSA DIV SÓ PRA MIM FAZER O FORM APARECER */
+    display: none;
+}
+.enviar{
+    margin-top: 5px;
+    width: 40px;
+    height: 20px;
+    background: dodgerblue;
+    border-radius: 5px;
+    color: white;
+    line-height: 20px;
+}
+.enviar:hover{
+    cursor: pointer;
+}
+.cancelar{
+    margin-top: 5px;
+    width: 50px;
+    height: 20px;
+    background: red;
+    border-radius: 5px;
+    color: white;
+    line-height: 20px;
+}
+.cancelar:hover{
+    cursor: pointer;
+}

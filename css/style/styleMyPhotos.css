@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/06/2017, 22:14:36
+    Author     : Renan-PC
+*/
+
+.titlePhotos{
+    font-family: 'ARIAL';
+    color: #646464;
+    text-align: center;
+    font-size: 22px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    margin: auto;
+    /*background: black;*/
+    /* border-radius: 50px;*/
+    width: 950px;
+
+}
+.insurerMyPhotos{
+    width: 950px;
+    background: #fefefe;
+    position: relative;
+    top: 20px;
+    margin: auto;
+    float: left;
+    margin-left: 25px;
+}
+.boxPhotos{
+    width: 180px;
+    height: 180px;
+    margin: 5px;
+    background: black;
+    border-radius: 5px;
+    float: left;
+}
+.fotoCaixa{
+    width: 180px;
+    height: 140px;
+    background: gray;
+    z-index: 99;
+}
+.titlePhotos{
+    width: 180px;
+    height: 20px;
+    background: #212121;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    color: gray;
+}
+.datePhoto{
+    width: 180px;
+    height: 20px;
+    background: #fefefe;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    color: gray;
+    margin-top: -5px;
+}
+

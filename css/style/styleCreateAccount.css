@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/06/2017, 22:52:47
+    Author     : Renan-PC
+*/
+
+.buttonLogin{
+    width: 120px;
+    height: 40px;
+    /*background: black;*/
+    background: url('../../imagens/icones/IconesLogarCadastrar/logarConta2.png');
+    position: absolute;
+    right: 20px;
+    float: right;
+    top: 2px;
+}
+.buttonSend2{
+    width: 120px;
+    height: 40px;
+    /*background: #0ACDC2;*/
+    background: url('../../imagens/icones/IconesLogarCadastrar/criarConta2.png');
+    margin: auto;
+    margin-top: 10px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+}
+.buttonSend2:hover{
+    cursor: pointer;
+}
+.inputPasswordAgain{
+    width: 250px;
+    height: 40px;
+    position: relative;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.9);
+    transition: 2s;
+    margin-top: 3px;
+    padding-left: 7px; 
+}
+.inputPasswordAgain:hover{
+    background: rgba(255,255,255,1);
+    transition: 2s;
+}
+.inputNickname{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.9);
+    transition: 2s;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 7px;
+}
+.inputNickname:hover{
+    background: rgba(255,255,255,1);
+    transition: 2s;
+}
+#insurerInputs{
+    width:290px;
+    /*background: dodgerblue;*/
+    margin: auto;
+    text-align: center;
+    line-height: -10px;
+}

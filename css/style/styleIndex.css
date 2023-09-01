@@ -1,0 +1,167 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25/06/2017, 11:06:11
+    Author     : Renan Bezerra and Ruan Lucas
+*/
+#content{
+    width: 300px;
+    /*background: yellow;*/
+    margin: auto;
+}
+.miniLogo{
+    width: 45px;
+    height: 45px;
+    /*background: burlywood;*/
+    background: url('../../imagens/icones/IconesLogoIndex/trianguloSmall2.png');
+    float: left;
+    top: 10px;
+}
+.buttonRegister{
+    width: 120px;
+    height: 40px;
+    /*background: azure;*/
+    background: url('../../imagens/icones/IconesLogarCadastrar/criarConta2.png');
+    position: relative;
+    float: right;
+    top: 2px;
+    display: none;
+}
+.logoMain{
+    width: 170px;
+    height: 170px;
+    /*background: blanchedalmond;*/
+    background: url('../../imagens/icones/IconesLogoIndex/logoIcone.png');
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+.nameNetwork{
+    width: 250px;
+    height: 80px;
+    /*background: darkkhaki;*/
+    background: url('../../imagens/icones/IconesLogoIndex/logoNome.png');
+    margin: auto;
+    margin-top: 15px;
+}
+#inputs{
+    background: rgba(255,255,255,0.3);
+    margin: auto;
+    width: 290px;
+    margin-top: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+
+#erroNoInput {
+    background: rgba(255,255,255,0.3);
+    margin: auto;
+    width: 290px;
+    margin-top: 55px;
+    border-radius: 5px;
+}
+.inputEmail{
+    width: 290px;
+    height: 40px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.9);
+    transition: 2s;
+    padding-left: 7px;
+}
+.inputEmail:hover{
+    background: rgba(255,255,255,1);
+    transition: 2s;
+}
+.inputName{
+    width: 135px;
+    height: 40px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.9);
+    transition: 2s;
+    padding-left: 7px;
+    margin-bottom: 3px;
+}
+.inputName:hover{
+    background: rgba(255,255,255,1);
+    transition: 2s;
+}
+.inputLastName{
+    width: 135px;
+    height: 40px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.9);
+    transition: 2s;
+    padding-left: 7px;
+    margin-bottom: 3px;
+}
+.tamanho{
+    width: 142px;
+    /*background: black;*/
+}
+#corError{
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+.inputLastName:hover{
+    background: rgba(255,255,255,1);
+    transition: 2s;
+}
+.buttonSend{
+    width: 40px;
+    height: 40px;
+    background: url('../../imagens/icones/IconesLogarCadastrar/enviar.png');
+    border-radius: 2%;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+.buttonSend:hover{
+    cursor: pointer;
+}
+.inputPassword{
+    width: 290px;
+    height: 40px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.9);
+    transition: 2s;
+    padding-left: 7px;
+}
+.inputPassword:hover{
+    background: rgba(255,255,255,1);
+    transition: 2s;
+}
+.inputradio{
+    
+}
+.invalidDate{
+    width: 100%;
+    margin: auto;
+    background-color: rgba(123,123,123,0.4);
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Verdana';
+    color: white;
+}
+.backEmail{
+    width: 70px;
+    height: 35px;
+    margin: auto;
+    margin-top: 15px;
+    position: relative;
+    right: 120px;
+    float: right;
+    background: black;
+    background: url('../../imagens/icones/IconesLogarCadastrar/setaVoltar.png');
+}
+.error{
+    
+}
+

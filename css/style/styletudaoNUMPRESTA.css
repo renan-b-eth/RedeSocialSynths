@@ -1,0 +1,936 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31/05/2017, 20:36:22
+    Author     : Renan Bezerra and Ruan Lucas
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0
+}
+body{
+    background: url('../imagens/background/background2.png') no-repeat center center fixed;
+    background-size: cover;
+}
+.tamanho_header{
+    width: 1280px;
+    height: 60px;
+    background: gray;
+    margin: auto;
+}
+#container{
+    width: 1000px;
+    /*background:yellow;*/
+    margin: 0 auto;
+    position: relative;
+    right: 80px;
+    margin-top: 30px;
+
+}
+.insurerInfo{
+    width: 300px;
+    height: 45px;
+    /*background: dodgerblue;*/
+
+}
+.insurerInfo2{
+    width: 332px;
+    /*background: #737373;*/
+}
+.PFA{
+    width: 650px;
+    height: 1500px;
+    /*background: orange;*/
+    margin-left: 350px;
+}
+.PFA2{
+    width: 580px;
+    margin-left: 70px;
+    height: 30px;
+    /*background: cyan;*/
+    position: relative;
+    bottom: 30px;
+}
+.DPFA{
+    float: left;
+    margin-right: 10px;
+    font-family: 'ARIAL';
+    font-size: 18px;
+    line-height: 30px;
+}
+.aboutMe{
+    width: 330px;
+    margin-bottom: 10px;
+    background: #fefefe;
+}
+.border{
+    border-width: 1px;
+    border-color: #dedede;
+    border-style: solid;
+}
+.myPhotos{
+    width: 331px;
+    background: #fefefe;
+}
+.Pictures{
+    background: black;
+    width: 100px;
+    height: 100px;
+    margin: 5.1px;
+    float: left;
+}
+.nameProfileUser{
+    font-family: 'Ebrima';
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 45px;
+    margin-left: 20px;
+}
+.botaoAdicionar{
+    float: right;
+    position: relative;
+    top: -42px;
+}
+.profileNameUser{
+    line-height: 35px;
+    color: #646464;
+    font-family: 'Arial';
+    position: relative;
+    font-size: 20px;
+    left: 45px;
+    bottom: 35px;
+}
+hr{
+    width: 94%;
+    height: 1px;
+    background: #dfdfdf;
+    margin: auto;
+    margin-right: 100px;
+}
+.positionHr{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.seguradorOpcoes{
+    width: 90%;
+    margin-right: 10px;
+    /*background: dodgerblue;*/
+    height: 700px;
+    margin-top: 15px;
+}
+.back{
+    width: 33px;
+    height: 20px;
+    position: relative;
+    bottom: 30px;
+    left: 230px;
+}
+.feed{
+    width: 650px;
+    height: 2000px;
+    background: #f8f8f8;
+    margin: 0 auto;
+    position: relative;
+    left: 50px;
+}
+.myInfos{
+    text-align: center;
+    font-style: italic;
+    font-family: 'ARIAL';
+    color: #6e6e6e;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.myInfos2{
+    text-align: center;
+    font-family: 'ARIAL';
+    color: #979595;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.viewMore{
+    color: #757575;
+    font-family: 'ARIAL';
+    text-align: right;
+    font-size: 12px;
+}
+.insurerMyFriends{
+    width: 950px;
+    background: #fefefe;
+    margin: auto;
+    float: left;
+    margin-left: 25px;
+}
+.fotoAmigo{
+    width: 120px;
+    height: 120px;
+    background: black;
+    margin: 5px;
+    float: left;
+    border-radius: 6px;
+}
+.titleDescriptionFriend{
+    width: 280px;
+    height: 30px;
+    background: dodgerblue;
+    float: left;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Arial';
+    color: #212121;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 50px;
+}
+.descriptionFriend{
+    width: 280px;
+    height: 85px;
+    margin-top: 5px;
+    float: left;
+    background: #dbdbdb;
+    border-radius: 3px;
+}
+.titleYoursFriends{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #212121;
+    font-size: 20px;
+    font-family: "Arial";
+}
+
+.SinceFriends{
+    width: 140px;
+    height: 30px;
+    float: right;
+    /*background: aqua;*/
+    margin-top: 10px;
+    font-family: 'Ebrima';
+    color: dodgerblue;
+    line-height: 30px;
+    font-size: 11px;
+    font-style: italic;
+}
+.friendImportant{
+    width: 30px;
+    height: 30px;
+    /*background: black;*/
+    float: left;
+    margin-top: 10px;
+    position: relative;
+    right: 80px;
+}
+.infoFriends{
+    width: 450px;
+    height: 170px;
+    background: #e2e2e2;
+    float: left;
+    margin: 3px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+.bar_friends{
+    width: 30px; /*30*/
+    height: 2000px;
+    background: #3d3d3d;
+    float: right;
+    position: relative;
+    bottom: 2030px;
+    transition: 2s;
+    overflow: hidden;/*ISSO É MUITO IMPORTANTE*/
+    z-index: 999;
+}
+.posicaoPontinho{
+    margin-left: 7.5px; 
+    margin-top: 330px;
+}
+.bar_friends:hover{
+    transition: 2s;
+    width: 255px;
+}
+.verBarra{
+    width: 30px;
+    height: 2000px;
+    background: #212121;
+    position: relative;
+    bottom: 70px;
+    float: left;
+}
+.buttonRegister{
+    width: 120px;
+    height: 40px;
+    /*background: azure;*/
+    background: url('../imagens/icones/IconesLogarCadastrar/criarConta.png');
+    position: relative;
+    float: right;
+    top: 2px;
+}
+.buttonLogin{
+    width: 120px;
+    height: 40px;
+    /*background: azure;*/
+    background: url('../imagens/icones/IconesLogarCadastrar/logarConta.png');
+    position: absolute;
+    right: 20px;
+    float: right;
+    top: 15px;
+}
+.miniLogo{
+    width: 60px;
+    height: 60px;
+    /*background: burlywood;*/
+    background: url('../imagens/icones/IconesLogoIndex/trianguloSmaill.png');
+    float: left;
+    top: 10px;
+}
+.logoMain{
+    width: 170px;
+    height: 170px;
+    /*background: blanchedalmond;*/
+    background: url('../imagens/icones/IconesLogoIndex/logoIcone.png');
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+
+.nameNetwork{
+    width: 250px;
+    height: 80px;
+    /*background: darkkhaki;*/
+    background: url('../imagens/icones/IconesLogoIndex/logoNome.png');
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+#inputs{
+    background: white;
+    background: rgba(255,255,255,0.3);
+    transition: 2s;
+    width: 290px;
+    height: 40px;
+    position: relative;
+    top: 40px;
+    margin: auto;
+    border-radius: 5px;
+}
+#inputs:hover{
+    background: rgba(255,255,255,0.6);
+    transition: 2s;
+}
+.input_email{
+    width: 249px;
+    height: 40px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.3);
+    transition: 2s;
+}
+.input_email:hover{
+    background: rgba(255,255,255,0.6);
+    transition: 2s;
+}
+.button_enviar{
+    width: 40px;
+    height: 40px;
+    background: url('../imagens/icones/IconesLogarCadastrar/enviar.png');
+    border-radius: 2%;
+    position: relative;
+    float: right;
+    overflow: hidden;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.buttonSend2{
+    width: 120px;
+    height: 40px;
+    background: #0ACDC2;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+}
+.buttonSend2:hover{
+    cursor: pointer;
+}
+.inputPassword{
+    width: 249px;
+    height: 40px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.3);
+    transition: 2s;
+}
+.inputPassword:hover{
+    background: rgba(255,255,255,0.6);
+    transition: 2s;
+}
+.inputNickname{
+    width: 249px;
+    height: 40px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.3);
+    transition: 2s;
+}
+.inputNickname:hover{
+    background: rgba(255,255,255,0.6);
+    transition: 2s;
+}
+.button_enviar:hover{
+    cursor: pointer;
+}
+#horario{
+    width: 50%;
+    margin: auto;
+    height: 40px;
+    /*background: #b1ff00;*/
+    text-align: center;
+    position: relative;
+    top: 40px; 
+    line-height: 40px;
+    color: white;
+    font-style: italic;
+}
+#dados_invalidos{
+    width: 60%;
+    height: 50px;
+    margin: auto;
+    background-color: rgba(123,123,123,0.4);
+    position: relative;
+    top: 60px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Verdana';
+}
+
+#cc{
+    width: 100%;
+    height: 30px;
+    /*background: aquamarine;*/
+    line-height: 30px;
+    font-family: 'Century Gothic';
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+#effectBlack{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    background: black;
+    background: linear-gradient(transparent,black);
+    filter: blur(15px);
+}
+
+
+#atencao{
+    width: 256px;
+    height: 256px;
+    margin: auto;
+    background: activeborder;
+    position: relative;
+
+}
+#detalhesUsuarioEsquerdo{
+    width: 22%;
+    height: 300px;
+    /*background: activeborder;*/
+    float: left;
+    margin-top: 30px;
+}
+.publish{
+    width: 630px;
+    height: 120px;
+    background: #fefefe;
+    margin-left: 10px;
+    transition: 1s;
+}
+.publish:hover{
+    transition: 1s;
+    box-shadow: 0px 1px 7px 0px rgba(50, 50, 50, 0.75);
+}
+.line{
+    background: #dfdfdf; 
+    height: 1px; 
+    width: 600px; 
+    margin: auto; 
+    margin-top: 10px;
+}
+.line2{
+    background: dodgerblue; 
+    height: 1px; 
+    width: 550px; 
+    margin: auto; 
+    margin-top: 15px;
+}
+.publication{
+    width: 630px;
+    background: #f8f8f8;
+    margin: auto;
+    margin-top: 15px;
+}
+#barraAmigos{
+    width: 22%;
+    height: 800px;
+    background: #4b4b4b;
+    float: right;
+}
+#esconderAmigos{
+    width: 8%;
+    height: 800px;
+    background: #212121;
+}
+.searchBar{
+    color: white;
+    background:  #2d2d2d;
+    width: 19.8%;
+    height: 25px;
+    border-radius: 3px;
+    margin-top: 10px;
+    float: left;
+}
+.logoMain{
+    width: 180px;
+    height: 35px;
+    /*background: white;*/
+    position: relative;
+    margin: auto;
+    top: 5px;
+    background: url('../imagens/icones/IconesHeader/logoSynths2.png');
+}
+.insurerMenu{
+    width: 140px;
+    height: 35px;
+    /*background: white;*/
+    float: right;
+    margin-top: 2.5px;
+}
+.userImage{
+    width: 35px;
+    height: 35px;
+    margin-left: -10px;
+    /*background: white;*/
+    background: url('../imagens/icones/IconesBarraEsquerda/fotoInicialDescricao.png');
+    border-radius: 100%;
+
+}
+.blackUserImage{
+    width: 35px;
+    height: 35px;
+    margin-left: -10px;
+    /*background: white;*/
+    background: url('../imagens/icones/IconesHeader/fotoPerfilHeader.png');
+    border-radius: 100%;
+}
+.editarPerfil{
+    float: right;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 45px;
+    background: url('../imagens/icones/IconesMeuPerfil/editarMeuPerfil.png');
+}
+.imagem_amigo{
+    width: 35px;
+    height: 35px;
+    margin-top: 12.5px;
+    margin-left: 10px;
+    background: white;
+    border-radius: 100%;
+    float: left;
+}
+.submitPostIcon{
+    margin-left: 15px;
+    margin-top: 5px;
+    float: left;
+}
+.submitPostName{
+    width: 85px;
+    height: 25px;
+    /*background: dodgerblue;*/
+    margin-top: 13px;
+    margin-right: -10px;
+    float: left;
+    color: black;
+    font-family: 'Arial';
+}
+.facePosition{
+    position: relative;
+    left: 120px;
+    top: 2px;
+}
+.nome_amigo{
+    width: 150px;
+    /*background: activeborder;*/
+    margin-left: 50px;
+    position: relative;
+    top: 20px;
+    color: white;
+    font-family: 'Arial';
+}
+.searchIcon{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: url('../imagens/icones/IconesHeader/search2.png');
+}
+.searchIcon:hover{
+    cursor: pointer;
+}
+.userName{
+    width: 105px;
+    height: 35px;
+    /*background: black;*/
+    margin-right: 200px;
+    line-height: 35px;
+    color: white;
+    font-family: 'Arial';
+    position: relative;
+    left: 35px;
+    bottom: 35px;
+}
+.selectionItens{
+    width: 20px;
+    height: 20px;
+    background: #61d415;
+    background: url('../imagens/icones/IconesHeader/sair.png');
+    margin-top: 7.5px;
+    float: right;
+}
+.selectionItens:hover{
+    cursor: pointer;
+}
+.status_amigo{
+    width: 10px;
+    height: 10px;
+    margin-top: 6px;
+    margin-left: 210px;
+    background: white;
+    border-radius: 100%;
+}
+.pesquisarAmigos{
+    width: 225px;
+    height: 70px;
+    background: #4b4b4b;
+    box-shadow: 0px 11px 15px 0px rgba(0, 0, 0, 0.35);
+    margin-left: 30px;
+}
+
+.barra_pesquisar_amigos{
+    color: white;
+    background:  #3d3d3d;
+    width: 90%;
+    height: 30px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.caixinhas_amigos{
+    width: 225px;
+    height: 70px;
+    background: #666666;
+    box-shadow:  0px -6px 15px 0px rgba(0, 0, 0, 0.35);
+    margin-left: 30px;
+}
+.IconExplore{
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 100%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.nameExplore{
+    width: 70%;
+    height: 20px;
+    /*background: #bcbcbc;*/
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: black;
+    font-family: 'Arial';
+    font-size: 15px;
+}
+.publishPhotoUser{
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    background: #61d415;
+    background: url('../imagens/icones/IconesMeuPerfil/iconeUsuarioPostagem.png');
+    margin-top: 10px;
+    margin-left: 15px;
+    float: left;
+}
+.enterPublish{
+    width: 400px;
+    height: 50px;
+    /*background: #df0024;*/
+    margin-top: 10px;
+    margin-left: 15px;
+    font-family: 'Arial';
+    color: #737373;
+    line-height: 90px;
+}
+.insurerPublish{
+    width: 580px;
+    background: #fefefe;
+    margin: auto;
+    transition: 1s;
+}
+.insurerPublish:hover{
+    transition: 1s;
+    background: #f5f8fa;
+}
+.posicaoPostagemPerfil{
+    position: relative;
+    left: 35px;
+}
+.postmanPhoto{
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    position: relative;
+    top: 20px;
+    border-radius: 3px;
+}
+.titulo_publicacao{
+    width: 500px;
+    height: 30px;
+    /*background: #737373;*/
+    margin-left: 90px;
+    position: relative;
+    bottom: 48px;
+    font-family: 'Ebrima';
+    color: #9b9b9b;
+    font-size: 17px;
+}
+.titlePhotos{
+    font-family: 'ARIAL';
+    color: #646464;
+    text-align: center;
+    font-size: 22px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    margin: auto;
+    /*background: black;*/
+    /* border-radius: 50px;*/
+    width: 950px;
+
+}
+.shaded{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    top: -35px;
+    background: black;
+    background: linear-gradient(transparent,black);
+    /*filter: blur(15px);SE QUISER*/
+}
+.insurerMyPhotos{
+    width: 950px;
+    background: #fefefe;
+    position: relative;
+    top: 20px;
+    margin: auto;
+    float: left;
+    margin-left: 25px;
+}
+.boxPhotos{
+    width: 180px;
+    height: 180px;
+    margin: 5px;
+    background: black;
+    border-radius: 5px;
+    float: left;
+}
+.fotoCaixa{
+    width: 180px;
+    height: 140px;
+    background: gray;
+    z-index: 99;
+}
+.titlePhotos{
+    width: 180px;
+    height: 20px;
+    background: #212121;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    color: gray;
+}
+.datePhoto{
+    width: 180px;
+    height: 20px;
+    background: #fefefe;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    color: gray;
+    margin-top: -5px;
+}
+.backMain{
+    width: 30px;
+    height: 30px;
+    /*background: black;*/
+    margin-left: 240px;
+    position: relative;
+    bottom: 35px;
+}
+b{
+    color: black;
+}
+.postageIcon{
+    width: 25px;
+    height: 25px;
+    /*background: #4b4b4b;*/
+    background: url('../imagens/icones/IconesPostagem/calendarioIcone.png');
+    margin-left: 90px;
+    margin-top: -45px;
+}
+.postageDate{
+    width: 80%;
+    height: 25px;
+    /*background: #0ACDC2;*/
+    margin-left: 120px;
+    margin-top: -25px; 
+    color: #d1d1d1;
+    line-height: 25px;
+    font-size: 14px;
+    font-family: 'Arial';
+}
+.photoDrag{
+    width: 540px;
+    height: 540px;
+    /*background: #0ACDC2;*/
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.toggleButton{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    /*background: #e8e8e8;*/
+}
+.buttonName{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-left: 30px;
+    margin-top: -30px;
+    font-family: 'Ebrima';
+    /*background: #d1d1d1;*/
+}
+.insurerButton{
+    width: 200px;
+    height: 30px;
+    /*background: #9b9b9b;*/
+    margin-left: 20px;
+}
+.profileUser{
+    width: 100%;
+    height: 300px;
+    background: white;
+    box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 0.75);
+}
+.seguradorSobreMim{
+    width: 330px;
+    /*background: #61d415;*/
+}
+.imageAboutMe{
+    width: 50px;
+    height: 50px;
+    /*background: blueviolet;*/
+    background: url('../imagens/icones/IconesMeuPerfil/minhasInformacoes.png');
+    margin-left: 10px;
+}
+.imageAboutMe2{
+    width: 50px;
+    height: 50px;
+    /*background: blueviolet;*/
+    background: url('../imagens/icones/IconesMeuPerfil/fotosIcone.png');
+    margin-left: 10px;
+}
+.titleAboutMe{
+    width: 250px;
+    height: 50px;
+    margin-left: 70px;
+    margin-top: -50px;
+    /* background: crimson;*/
+    color: #939393;
+    line-height: 50px;
+    font-family: 'ARIAL';
+    font-size: 22px;
+
+}
+.backgroundProfile{
+    width: 100%;
+    height: 250px;
+    background: #d1d1d1;
+    margin: 0 auto;
+    z-index: 10;
+}
+.infoProfile{
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    top: -150px;
+    right: 80px;
+    /*background: #332a6e;*/
+    z-index: 55;
+}
+.dataProfileUser{
+    width: 800px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+    left: 100px;
+    /*background: #9a293a;*/
+}
+.sizePhotoUser{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background: #fefefe;
+    bottom: 35px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.75);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:cliked{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none; 
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+

@@ -1,0 +1,319 @@
+/*nao muda nada pf, esta tudo friamente calculado by mestre ruru*/
+
+#centralizer {  /*o famoso container que ta segurando tudo que ta no meio da pagina*/
+    width: 580px;
+    margin: auto;
+    margin-top:60px;
+}
+
+/*A PARTIR DAQUI SE ENCONTRA O CSS DE CADA POSTAGEM*/
+
+
+.post { /*essa div segura tudo que o post contem, incluindo a parte com o texto, a foto de perfil, a data, etc, ela eh soh pra segurar tudo*/
+    width: 100%;
+    display: table;
+    position: relative;
+    font-family: Corbel;
+    margin-top: 20px;
+}
+.caixaPost { /*essa div é a que segura somente a parte branca do post, onde ha uma outra subdiv que segura o texto com as imagens*/
+    background-color: white;
+    word-wrap: break-word; 
+    float: left;
+    padding-left: 4px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.33);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.33);
+    box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.33);
+    padding: 7px;
+    position: relative;
+    width: 436px;
+    min-height: 115px;
+}
+.conteudoPost { /*essa eh a sub div que soh segura o texto de uma postagem*/
+    padding-left: 6px;
+}
+
+.barLeft { /*essa eh a barra esquerda onde ela segura a foto do perfil com o botao de like e compartilhar*/
+    width: 80px;
+    height: 120px;
+    float: left;
+}
+
+.barRight { /*essa eh a barra direita que segura a data e a linha*/
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+.data { /*div da data do post*/
+    padding-top: 10px;
+    background: #f1f1f1;
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    font-family: 'adria grotesk';
+    line-height: 12px;
+}
+.linhaPost {    /*div da linha do post*/
+    width: 1px;
+    background-color: #d0d0d0;
+    height: 100%;
+    margin: auto;
+}
+
+.fotoPost { /*essa div eh a da foto de perfil do post, ela esta dentro da div barRight*/
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    border-radius: 100%;
+    border-color: white;
+    border-width: 5px;
+    border-style: solid;
+    margin: auto;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.33);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.33);
+    box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.33);
+}
+.nomeUserPost { /*essa div eh o nome de quem publicou junto com o tipo de publicacao tipo "Renan postou um status" */
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 5px;
+    font-size: 18px;
+}
+.heart { /*div do botao de like*/
+    background: url('../../imagens/icones/iconesPostagem/heartNormal.png');
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-top: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.heart:hover {
+    background: url('../../imagens/icones/iconesPostagem/heartzin.png');
+    transition: 0.3s;
+}
+.reblog {   /*div do botao de compartilhar*/
+    background: url('../../imagens/icones/iconesPostagem/reblogNormal.png');
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-top: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.reblog:hover {
+    transition: 0.3s;
+    background: url('../../imagens/icones/iconesPostagem/reblogzin.png');
+}
+.commentBox { /* essa div "caixa de comentarios" vai segurar os futuros comentarios do post, ela se expande conforme a qtd de comentarios, mas
+como nao coloquei nenhum comentario ela esta invisivel*/
+    width: 100%;
+    display: table;
+    min-height: 4px;
+    position: relative;
+    border-top-width: 1px;
+    border-top-color: #e0e0e0;
+    border-top-style: solid;
+    margin-top: 10px;
+    padding-top: 5px;
+
+}
+.fazerComentario {  /*essa div segura a parte de baixo onde permite o usuario comentar*/
+    width: 100%;
+    display: table;
+}
+.comentarFoto { /*essa div tem a foto do usuario que esta comentando*/
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 100%;
+    border-color: #ddd;
+    border-width: 4px;
+    border-style: solid;
+    margin-left: 7px; 
+    float: left;
+}
+.comentarTexto { /*essa div eh a do "textarea" que nada mais eh que a parte q o user digita o comentario*/
+    width: 360px;
+    height: 20px;
+    border-radius: 3px;
+    border-color: #d0d0d0;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 13px;
+    margin-left: 5px;
+    margin-top: 4px;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    float: left;
+    resize: none;
+    font-family: Corbel;
+}
+.comentarTexto::-webkit-input-placeholder { /*todos esses bang aqui eh pra mudar o estilo do placeholder*/
+    font-style: italic;
+    font-size: 10px;
+}
+
+.comentarTexto:-moz-placeholder { /* Firefox 18- */
+    font-style: italic;  
+    font-size: 10px;
+}
+.comentarTexto::-moz-placeholder {  /* Firefox 19+ */
+    font-style: italic;
+    font-size: 10px;
+}
+
+.comentarTexto:-ms-input-placeholder {  
+    font-style: italic;
+    font-size: 10px;
+}
+.comentarTexto:focus { /*isso daqui eh pra tirar a borda azul que fica nos inputs/textarea de formularios*/
+
+    outline: 0;
+
+} 
+.comentarTexto:focus::-webkit-input-placeholder { /*esses outros aqui tb eh a estilizacao do placeholder*/
+    color:#bbb;
+}
+.comentarTexto:focus:-moz-placeholder {
+    color:#bbb;
+} 
+.comentarTexto:focus::-moz-placeholder {
+    color:#bbb;
+} 
+.comentarTexto:focus:-ms-input-placeholder {
+    color:#bbb;
+} 
+
+.imagemPost { /*essa eh a div do post onde tera a imagem caso o usuario poste, caso ele nao poste, essa div nem aparece*/
+    width: 450px;
+    margin-left: -7px;
+    margin-top: 8px;
+}
+.imagemPost img { /*esse daqui define q a imagem tem q ter 100% de width e a altura eh automatica para n distorcer a imagem*/
+    width: 100%;
+    height: auto;
+}
+
+textarea { /*definindo fonte do textarea*/
+    font-family: Corbel;
+
+}
+
+/*CREIO EU QUE AQUI SEJA O FIM DO CSS DAS POSTAGENS*/
+
+
+
+#caixaPostar { /*essa div jah eh la de cima, da parte de criar uma pub, ela ta segurando toda a parte de criar postagem, a parte do input e a da foto tb, tudo;*/
+    width: 100%;
+    display: table;
+    /*background: ;*/
+    position: relative;
+}
+#postar { /*agr essa daqui eh a parte branca onde ela segura o textarea e as imagenszinhas de postar foto etc*/
+    background-color: white;
+    width: 436px;
+    min-height: 55px;
+    word-wrap: break-word; 
+    text-align: justify;
+    float: left;
+    padding-left: 4px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.33);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.33);
+    box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.33);
+    padding: 7px;
+    position: relative;
+    float: left;
+}
+#inputPostar { /*essa div ta com o nome input mas na vdd eh um textarea, esse eh onde o user digita a pub*/
+    width: 100%;
+    height: 100%;
+    word-wrap: break-word;
+    resize: none;
+}
+#inputPostar:focus { /*novamente, isso impede aquela borda azul dos inputs/textarea*/
+    outline: 0;
+}
+.barLeftPostar {/*essa eh a barra esquerda da parte de criar postagem, onde a foto eh segurada por essa div*/
+    width: 80px;
+    height: 55px;
+    float: left;
+}
+.fotoPostar { /*essa div eh onde fica a foto do usuario que vai criar a postagem*/
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 100%;
+    border-color: white;
+    border-width: 4px;
+    margin-top: 9px;
+    margin-left: 16px;
+    border-style: solid;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.33);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.33);
+    box-shadow: 0px 0px 4px 0px rgba(153,153,153,0.33);
+}
+
+#areaInferiorPostar { /*essa daqui eh uma div interna q ta dentro da div "postar" porem ela fica em baixo, pois ela segura o botao publicar e as imagenszinhas de foto etc*/
+    width: 100%;
+    height: 20px;
+    float: left;
+    position: relative;
+    border-top-color: #e0e0e0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    padding-top: 7px;
+    display: table;
+}
+#pubblish:focus {
+    outline: 0;
+}
+#pubblish { /*botao publicar*/
+    height: 22px;
+    width: 78px;
+    position: absolute;
+    right: 8px;
+    top:6px;
+    cursor: pointer;
+    background: url('../../imagens/icones/iconesPublicar/pubblish.png');
+}
+
+.fileinputs {
+    position: relative;
+    overflow: hidden;
+}
+
+.fakefile {
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    z-index: 1;
+}
+
+.file {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    text-align: right;
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    z-index: 2;
+}
+.imagemPost { /*essa eh a div do post onde tera a imagem caso o usuario poste, caso ele nao poste, essa div nem aparece*/
+        width: 450px;
+        margin-left: -7px;
+        margin-top: 8px;
+
+    }
+    .imagemPost img { /*esse daqui define q a imagem tem q ter 100% de width e a altura eh automatica para n distorcer a imagem*/
+        width: 100%;
+        height: auto;
+    }
+

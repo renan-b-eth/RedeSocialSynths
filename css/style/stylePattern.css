@@ -1,0 +1,256 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31/05/2017, 20:36:22
+    Author     : Renan Bezerra and Ruan Lucas
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0
+}
+
+#container{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 110px;
+    background-color: ;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+img.normal {
+    height: 100%;
+    width: 100%;
+}
+
+#insurerBarOptions{
+    width: 50px;
+    height: 315px;
+    /*background: black;*/
+    position: fixed;
+    top: 190px;
+}
+.option{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+.option:hover{
+    cursor: pointer;
+}
+
+#header{
+    width: 100%;
+    height: 50px;
+    background-color: #2d6b7d;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top:0;
+    position: fixed;
+    z-index: 9999;
+}
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+#backHeader {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#centralizerHeader {
+    width: 1040px;
+    margin: auto;
+    height: 50px;
+    position: relative;
+}
+#linhazinha {
+    width: 155px;
+    background: white;
+    position: absolute;
+    bottom: 13px;
+    height: 1px;
+}
+#inputSearch {
+    margin-top: 18px;
+    color: white;
+    background: transparent;
+    font-style: italic;
+    position: absolute;
+}
+/* PARA CHROME, SAFARI, ANDROID E IOS */
+#inputSearch::-webkit-input-placeholder {
+   color: white;
+}
+
+#inputSearch:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+
+#inputSearch::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+
+#inputSearch:-ms-input-placeholder {  
+   color: white;  
+}
+#inputSearch:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    
+} 
+
+#menuzinhoHeader {
+    width: 20px;
+    height: 20px;
+    background: url("../../imagens/icones/IconesHeader/sair.png"); 
+    position: absolute;
+    right: 15px;
+    top: 14px;
+    overflow: all;
+    cursor: pointer;
+}
+#optionSaida { 
+    width: 114px;
+    height: 89px;
+    background: url("../../imagens/icones/IconesHeader/opt.png"); 
+    position: absolute;
+    right: -14px;
+    top:20px;
+    display: none;
+    cursor: default;
+
+}
+#menuzinhoHeader:hover {
+     background: url("../../imagens/icones/IconesHeader/sair2.png"); 
+}
+#menuzinhoHeader:hover #optionSaida {
+    display: block;
+}
+
+.optionHeader {
+    width: 80%;
+    height: 20px;
+    float: left;
+    margin-left:7px;
+    margin-top: 3px;
+    font-family: Corbel;
+    padding-left: 5%;
+    line-height: 20px;
+    font-size: 13px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+
+}
+.optionHeader:hover {
+
+    color:white;
+    background-color: #3798bb;
+
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #3798bb;
+
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #3798bb;
+    cursor: pointer;
+}
+#fotoPerfilHeader {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #f1f1f1;
+    position: absolute;
+
+    right: 120px;
+    top:4px;
+}
+
+#logo {
+    margin: auto;
+    width: 115px;
+    height: 48px;
+    background: url("../../imagens/icones/IconesHeader/logoSynths2.png");
+}
+
+#nomeHeader {
+    width: 90px;
+    height: 20px;
+    font-size: 14px;
+    font-family: Corbel;
+    color: white;
+    position: absolute;
+    right:20px;
+    top:16px;
+}
+
+#cc{
+    width: 100%;
+    height: 30px;
+    /*background: aquamarine;*/
+    line-height: 30px;
+    font-family: 'Century Gothic';
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.effectBlack{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    background: black;
+    background: linear-gradient(transparent,black);
+    filter: blur(15px);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:cliked{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none; 
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.bolinha {
+    width: auto;
+    padding: 4px;
+    min-height: 10px;
+    min-width: 10px;
+    height: auto;
+    background: #c81d1d;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    font-family: 'arial';
+    border-radius: 100%;
+    position: absolute;
+    top:2px;
+    right: 2px;
+}

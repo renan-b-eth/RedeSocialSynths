@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22/10/2017, 11:09:07
+    Author     : Renan-PC
+*/
+#game{
+    margin: auto;
+    width: 445px;
+    height: 530px;
+    background-image: url("../../imagens/cenario.png");
+    margin-top: 30px;
+}
+.btnVelha{
+    width: 140px;
+    height: 140px;
+    margin: 4px;
+    float: left;
+    cursor: pointer;
+    background-color: transparent;
+}
+#jogador{
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    background: #e8e8e8;
+    font-family: 'Corbel';
+    font-size: 20px;
+    color: dodgerblue;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+#pontosX{
+    width: 100px;
+    height: 50px;
+    background: #363636;
+    font-family: 'Corbel';
+    font-size: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+#pontosO{
+    width: 100px;
+    height: 50px;
+    background: #363636;
+    font-family: 'Corbel';
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    left: 345px;
+    bottom: 50px;
+    border-radius: 5px;
+}
+#jogador2{
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    margin-top: -50px;
+    text-align: center;
+    text-height: 30px;
+    font-family: 'Corbel';
+    color: dodgerblue;
+}
+#reiniciar{
+	background: #e8e8e8;
+	width: 80px;
+	height: 40px;
+	border-radius: 5px;
+	margin: auto;
+	font-family: 'Arial';
+	font-size: 16px;
+	color:red;
+	margin-top: 20px;
+	position: relative;
+	left:  182.5px;
+}
+#reiniciar:hover{
+	cursor: pointer;
+}
+.voltar{
+	width: 80px;
+	height: 40px;
+	background: url("../../imagens/icones/voltar.png");
+	margin-left: 5px;
+}
+.voltar:hover{
+	cursor: pointer;
+}
